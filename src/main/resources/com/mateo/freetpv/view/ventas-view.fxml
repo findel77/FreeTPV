@@ -37,7 +37,7 @@
             <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
          </padding>
          <left>
-            <VBox maxWidth="500.0" minWidth="500.0" spacing="10.0" BorderPane.alignment="CENTER">
+            <VBox maxWidth="500.0" minWidth="460.0" spacing="10.0" BorderPane.alignment="CENTER">
                <children>
                   <HBox alignment="BOTTOM_LEFT" spacing="30.0">
                      <children>
@@ -96,7 +96,7 @@
                   </HBox>
                   <TableView fx:id="ticketTableView" maxHeight="1.7976931348623157E308" prefHeight="250.0">
                     <columns>
-                      <TableColumn fx:id="productoTableColumn" editable="false" prefWidth="188.0" resizable="false" sortable="false" text="Producto" />
+                      <TableColumn fx:id="productoTableColumn" editable="false" prefWidth="150.0" resizable="false" sortable="false" text="Producto" />
                       <TableColumn fx:id="cantidadTableColumn" editable="false" resizable="false" sortable="false" text="Cant." />
                         <TableColumn fx:id="precioTableColumn" editable="false" prefWidth="90.0" resizable="false" sortable="false" text="P. unitario" />
                         <TableColumn fx:id="subtotalTableColumn" editable="false" prefWidth="90.0" resizable="false" sortable="false" text="Subtotal" />

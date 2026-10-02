@@ -10,6 +10,7 @@ import com.mateo.freetpv.model.Producto;
 import com.mateo.freetpv.service.AjustesService;
 import com.mateo.freetpv.service.ImprimirService;
 import com.mateo.freetpv.util.SesionActual;
+import com.mateo.freetpv.util.VentanaUtil;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
@@ -213,10 +214,8 @@ public class VentasController {
             // Conseguir stage desde el un objeto
             Stage stage = (Stage) cobrarButton.getScene().getWindow();
 
-            stage.setResizable(true);
-            stage.setMinWidth(1280);
-            stage.setMinHeight(720);
             stage.setScene(scene);
+            VentanaUtil.configurarVentanaPrincipal(stage);
         } catch (IOException e) {
             log.error("Error al cargar el view principal", e);
         }

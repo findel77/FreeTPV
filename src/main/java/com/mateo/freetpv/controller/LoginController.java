@@ -4,6 +4,7 @@ import com.mateo.freetpv.FreeTPVApplication;
 import com.mateo.freetpv.dao.UsuarioDAO;
 import com.mateo.freetpv.model.Usuario;
 import com.mateo.freetpv.util.SesionActual;
+import com.mateo.freetpv.util.VentanaUtil;
 import javafx.collections.FXCollections;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -83,10 +84,8 @@ public class LoginController {
                     // Conseguir stage desde el un objeto
                     Stage stage = (Stage) loginButton.getScene().getWindow();
 
-                    stage.setResizable(true);
-                    stage.setMinWidth(1280);
-                    stage.setMinHeight(720);
                     stage.setScene(scene);
+                    VentanaUtil.configurarVentanaPrincipal(stage);
                 } catch (IOException e) {
                     log.error("Error al cargar el view principal", e);
                 }
